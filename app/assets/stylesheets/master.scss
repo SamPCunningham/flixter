@@ -1,0 +1,19 @@
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Notable&display=swap');
+
+.navbar {
+  font-family: 'Notable', sans-serif;
+  font-weight: 200;
+  box-shadow: 0px 1px 3px #2a2a2a;
+  background: image_url('qbkls.png');
+}
+
+.navbar-light .navbar-brand {
+  font-family: 'Notable', sans-serif;
+  font-weight: 100;
+  color: #5F90BB;  
+}
+
+.nav-item {
+  color: #8998A5;
+}
