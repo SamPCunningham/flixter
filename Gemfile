@@ -67,6 +67,10 @@ gem 'jquery-rails'
 
 gem 'popper_js'
 
+gem 'simple_form'
+
+gem 'devise'
+
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.3.3'
 end
