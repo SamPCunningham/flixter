@@ -18,7 +18,8 @@ body {
   min-height: 100px;
   background-color: rgba(36, 32, 33, 0.9);
   color: white;
-  font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+  font-family: 'Notable', sans-serif;
+  font-weight: 100;
   padding: 10px 0px;
   margin-top: 30px;
 }
@@ -26,4 +27,12 @@ body {
 #footer a {
   color: white;
   font-weight: 100;
+}
+
+.social-button {
+  margin: 4px;
+}
+
+.social a:hover {
+  text-decoration: none;
 }
