@@ -1,14 +1,10 @@
 class Instructor::LessonsController < ApplicationController
 before_action :authenticate_user!
-before_action :require_authorized_for_current_section, only: [:new, :create]
+before_action :require_authorized_for_current_section, only: [:create]
 before_action :require_authorized_for_current_lesson, only: [:update]
 skip_before_action :verify_authenticity_token
   #This was the only suggested fix I could find that would fix error received when trying to reorder list items. I got this line from the following stackoverflow post: https://stackoverflow.com/questions/5669322/turn-off-csrf-token-in-rails-3
   
-
-  def new
-    @lesson = Lesson.new
-  end
 
   def create
     @lesson = current_section.lessons.create(lesson_params)
